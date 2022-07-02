@@ -23,6 +23,7 @@ jobs:
       
       - name: Buildando a aplicação
         run: |
+          cd
           cd ${{ env.SOLUTION_NAME }}/${{ env.PROJECT_NAME }}/
           dotnet clean
           dotnet build
@@ -31,6 +32,7 @@ jobs:
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         run: |
+          cd
           cd ${{ env.SOLUTION_NAME }}/${{ env.PROJECT_NAME }}/
           
           dotnet clean

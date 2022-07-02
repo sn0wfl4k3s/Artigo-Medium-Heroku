@@ -2,10 +2,10 @@ using WebHerokuPort;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.WebHost.UseHerokuPort();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.WebHost.UseHerokuPort();
 
 var app = builder.Build();
 

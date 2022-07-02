@@ -6,12 +6,6 @@ namespace Artigo_Medium_Heroku.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger _logger;
-
-        public HomeController(ILogger logger)
-        {
-            _logger = logger;
-        }
 
         public IActionResult Index()
         {
